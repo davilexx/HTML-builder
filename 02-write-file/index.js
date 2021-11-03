@@ -24,7 +24,7 @@ fs.writeFile(filePath, '', err => {
                 inputAgain();
             }
     
-            fs.appendFile(filePath, `\n${text}`, () => {});
+            fs.appendFile(filePath, `${text}\n`, () => {});
         })
     };
 
