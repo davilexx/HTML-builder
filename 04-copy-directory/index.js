@@ -10,7 +10,7 @@ fs.readdir(folder, {withFileTypes: true}, (err, files) => {
 
     fs.mkdir(path.join(__dirname, 'files-copy'), (err) => {
         if (err) {
-            fs.rmdir(path.join(__dirname, 'files-copy'), { recursive: true }, (err) => {
+            fs.rm(path.join(__dirname, 'files-copy'), { recursive: true }, (err) => {
                 if (err) {
                     throw err
                 } else {

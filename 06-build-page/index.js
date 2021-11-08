@@ -32,7 +32,7 @@ fs.readdir(__dirname, (err) => {
     }
 
     const removeOldProjectDist = () => {
-        fs.rmdir(projectDist, { recursive: true }, (err) => {
+        fs.rm(projectDist, { recursive: true }, (err) => {
             if (err) {
                 throw err
             }
