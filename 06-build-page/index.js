@@ -14,7 +14,7 @@ const stylesDestination = path.join(__dirname, 'project-dist/style.css');
 const assetsPath = path.join(__dirname, 'assets');
 const assetsDestination = path.join(__dirname, 'project-dist/assets');
 
-console.log('Building the page. It will take some time, be patient!');
+console.log('Building the page. It will take some time, be patient!\nIf some template styles are not replaced after building, try to run the script again!');
 
 fs.readdir(__dirname, (err) => {
     if (err) {
