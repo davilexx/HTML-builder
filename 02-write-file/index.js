@@ -14,8 +14,9 @@ fs.writeFile(filePath, '', err => {
         throw err
     }
 
+    console.log('Enter the text:');
     const inputAgain = () => {
-        rl.question('Enter the text: ', (value) => {
+        rl.question('', (value) => {
             let text = value;
         
             if (value === 'exit') {
